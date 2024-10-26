@@ -1,0 +1,108 @@
+/* CSS Variables for easy theming */
+:root {
+    --color-primary: #007bff; /* Primary color */
+    --color-secondary: #e9ecef; /* Light gray background */
+    --color-background: #f4f4f4; /* Page background */
+    --color-text: #333; /* Dark text */
+    --color-accent: #dc3545; /* Red accent for alerts */
+    --shadow-light: 0 4px 20px rgba(0, 0, 0, 0.1); /* Light shadow */
+    --shadow-hover: 0 8px 40px rgba(0, 0, 0, 0.15); /* Hover shadow */
+    --border-radius: 10px; /* Rounded corners */
+}
+
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--color-background);
+    color: var(--color-text);
+}
+
+/* Main container */
+.container {
+    width: 90%; /* Increased for better content flow */
+    max-width: 900px; /* Limit max width */
+    padding: 20px;
+    background: white;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-light);
+    transition: box-shadow 0.3s ease;
+}
+
+/* Header styling */
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    color: var(--color-primary);
+}
+
+.subheading {
+    font-size: 1.2rem;
+    color: var(--color-text);
+}
+
+/* Card styling for sections */
+.card {
+    margin: 20px 0;
+    padding: 20px;
+    background: var(--color-secondary);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-light);
+    transition: box-shadow 0.3s ease;
+}
+
+/* Title of cards */
+.card h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: var(--color-text);
+}
+
+/* Info box */
+.info-box {
+    padding: 10px;
+    margin-top: 5px;
+    background: #f8f9fa; /* Light gray background for info */
+    border-radius: 5px;
+    border-left: 5px solid var(--color-primary); /* Accent color */
+    font-weight: 500;
+    box-shadow: var(--shadow-light);
+}
+
+/* Countdown styling */
+.countdown {
+    font-weight: bold;
+    color: var(--color-accent); /* Red color for countdown */
+}
+
+/* Footer styling */
+.footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 10px 0;
+    color: #666;
+}
+
+/* Hover effect for the container and cards */
+.container:hover, .card:hover {
+    box-shadow: var(--shadow-hover);
+}
+
+/* Icon styling */
+h2 i {
+    margin-right: 8px; /* Space between icon and text */
+    color: var(--color-primary); /* Color for icons */
+}
